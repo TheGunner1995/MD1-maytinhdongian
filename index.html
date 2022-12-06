@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Cacularto</h1>
+<table>
+    <tr>
+        <th><input type="text"id="so1"></th>
+        <th><input type="text"id="so2"></th>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><button type="button" onclick="Addition()">Addition(+)</button></td>
+        <td><button type="button" onclick="Subtration()">Subtration(-)</button></td>
+        <td><button type="button" onclick="Multiplication()">Multiplication(x)</button></td>
+        <td><button type="button" onclick="Division()">Division(/)</button></td>
+    </tr>
+</table>
+<b id="ketqua">Kết quả</b>
+<script>
+function Addition(){
+    let so1= +document.getElementById('so1').value
+    let so2= +document.getElementById('so2').value
+        let a= so1+so2
+   document.getElementById('ketqua').innerHTML = 'ket qua:'+a
+}
+function Subtration() {
+    let so1 = +document.getElementById('so1').value
+    let so2 = +document.getElementById('so2').value
+    let b = so1 - so2
+    document.getElementById('ketqua').innerHTML = 'ket qua:' + b
+}
+function Multiplication() {
+    let so1 = +document.getElementById('so1').value
+    let so2 = +document.getElementById('so2').value
+    let c = so1 * so2
+    document.getElementById('ketqua').innerHTML = 'ket qua:' + c
+}
+function Division() {
+    let so1 = +document.getElementById('so1').value
+    let so2 = +document.getElementById('so2').value
+    let d = so1 / so2
+    document.getElementById('ketqua').innerHTML = 'ket qua:' + d
+}
+</script>
+</body>
+</html>
